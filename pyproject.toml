@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "alloy-voice-assistant"
+version = "0.1.0"
+description = "A lightweight voice assistant inspired by the alloy-voice-assistant project"
+readme = "README.md"
+authors = [
+  {name = "OpenAI Codex User"}
+]
+requires-python = ">=3.10"
+dependencies = [
+  "openai>=1.35.3",
+  "numpy>=1.26.0",
+  "sounddevice>=0.4.6",
+  "simpleaudio>=1.0.4"
+]
+
+
+[project.urls]
+Homepage = "https://github.com/svpino/alloy-voice-assistant"
+Repository = "https://github.com/svpino/alloy-voice-assistant"
+
+[tool.setuptools.packages.find]
+where = ["src"]
